@@ -1,0 +1,90 @@
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+    padding: 0;
+    cursor: pointer;
+}
+.navbar-custom {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.navbar-custom.scrolled {
+  background-color: #f8f9fa;
+}
+.nav-link:hover {
+  color: red; 
+}
+.icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 4px auto;
+    background-color: #333;
+    transition: all 0.2s;
+}
+
+.navbar-toggler:not(.collapsed) .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler:not(.collapsed) .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar,
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.color {
+    transition: 0.5s;
+  }
+
+  .color:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-color: rgb(0, 255, 8);
+  }
+
+  .car {
+    transition: 0.5s;
+  }
+
+  .car:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-color: rgb(0, 255, 8);                    
+  }
+
+  .side_color {
+    color: #5c6c76;
+    transition: 0.5ss;
+  }
+
+  .side_color:hover {
+    color: rgb(58, 167, 61);
+  }
+
+  .side_color1 {
+    color: #423c3c;
+    transition: 0.5ss;
+  }
+
+  .side_color1:hover {
+    color: rgb(58, 167, 61);
+  }
+
+@media (max-Width:500px) {
+    .mobile
+    {
+        margin-top: 20px;
+    }
+}

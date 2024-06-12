@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orderd</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+ 
+<!-- Vertical navbar -->
+<div class="vertical-nav " id="sidebar">
+
+  <ul class="nav flex-column nav-pills nav-pills-dark nav-lb-tab m-4">
+    <li class="nav-item" role="presentation">
+      <a href="account.html" style="text-decoration: none;"> <button class="but nav-link active bg-success"
+          id="Profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+          aria-controls="profile-tab-pane" aria-selected="true"> <i class="fa fa-user-circle me-1"
+            aria-hidden="true"></i> Profile</button></a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a href="Orderd.html" style="text-decoration: none;">
+        <button class="nav-link text-dark" id="Orderd-tab" data-bs-toggle="tab" data-bs-target="#Orderd-tab-pane"
+          type="button" role="tab" aria-controls="Orderd-tab-pane" aria-selected="true"><i
+            class="fa fa-handshake-o me-1" aria-hidden="true"></i>
+          Orderd</button>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+
+      <a href="Payment_metho.html" style="text-decoration: none;"><button class="nav-link text-dark" id="Payment_Method-tab"
+          data-bs-toggle="tab" data-bs-target="#Payment_Method-tab-pane" type="button" role="tab"
+          aria-controls="Payment_Method-tab-pane" aria-selected="true"><i class="fa fa-credit-card me-1"
+            aria-hidden="true"></i>
+          Payment Method</button></a>
+    </li>
+    <li class="nav-item" role="presentation">
+
+      <a href="" style="text-decoration: none;">
+        <button class="nav-link text-dark" id="Settings-tab" data-bs-toggle="tab" data-bs-target="#Settings-tab-pane"
+          type="button" role="tab" aria-controls="Settings-tab-pane" aria-selected="true"><i
+            class="fa fa-cog me-1" aria-hidden="true"></i>
+          Settings</button>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+
+      <a href="" style="text-decoration: none;">
+        <button class="nav-link text-dark" id="Notification-tab" data-bs-toggle="tab"
+          data-bs-target="#Notification-tab-pane" type="button" role="tab"
+          aria-controls="Notification-tab-pane" aria-selected="true"> <i class="fa fa-bell me-1"
+            aria-hidden="true"></i>
+          Notification</button>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a href="" class="nav-link " aria-current="page" style="color: #000;">
+        <hr>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a href="/index.html" style="text-decoration: none;"><button class="nav-link text-dark" id="Notification-tab"
+          data-bs-toggle="tab" data-bs-target="#Notification-tab-pane" type="button" role="tab"
+          aria-controls="Notification-tab-pane" aria-selected="true"> <i class="fa fa-arrow-right me-1"
+            aria-hidden="true"></i>
+          Log Out</button></a>
+    </li>
+  </ul>
+</div>
+<!-- End vertical navbar -->
+
+
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
+  <!-- Toggle button -->
+  <button id="sidebarCollapse" type="button" class="btn btn-success rounded-pill px-4 mb-4"><i class="fa fa-bars me-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+
+  <!-- Demo content -->
+  <div class="row">
+    <h4 class="mb-0">User Profile</h4>
+  </div>
+  <hr> 
+  <div class="py-6 p-md-6 p-lg-10">
+    <div class="d-flex justify-content-center align-items-center">
+      <img src="/IMG\user.webp"
+        class="rounded-circle img-fluid" style="width: 100px;" />
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <h4 class="mt-3 text-center">User Name</h4>
+      <button class="btn mr-2"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+    </div>
+
+    
+    <div class="col-md-12 mt-3">
+      <div class="card mb-4">
+        <div class="card-body text-center">
+          <div class="row">
+            <div class="col">
+              Name
+            </div>
+            <div class="col">
+              Malvaniya Dhaval
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              Email
+            </div>
+            <div class="col">
+              123@gmail.com
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              Phone
+            </div>
+            <div class="col">
+              (+91) 1234567890
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              Address
+            </div>
+            <div class="col">
+              Bay Area, San Francisco, CA
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+
+</div>
+<!-- End demo content -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="D:\Only new\Moive\compress\jquery-3.6.1.min.js"></script>
+<script src="sidebar.js"></script>
+</body>
+</html>
+
+

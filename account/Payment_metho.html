@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Payment Method</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+ 
+<!-- Vertical navbar -->
+<div class="vertical-nav " id="sidebar">
+
+  <ul class="nav flex-column nav-pills nav-pills-dark nav-lb-tab m-4">
+    <li class="nav-item" role="presentation">
+      <a href="account.html" style="text-decoration: none;"> <button class="but nav-link text-dark"
+          id="Profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab"
+          aria-controls="profile-tab-pane" aria-selected="true"> <i class="fa fa-user-circle me-1"
+            aria-hidden="true"></i> Profile</button></a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a href="Orderd.html" style="text-decoration: none;">
+        <button class="nav-link text-dark" id="Orderd-tab" data-bs-toggle="tab" data-bs-target="#Orderd-tab-pane"
+          type="button" role="tab" aria-controls="Orderd-tab-pane" aria-selected="true"><i
+            class="fa fa-handshake-o me-1" aria-hidden="true"></i>
+          Orderd</button>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+
+      <a href="Payment_method.html" style="text-decoration: none;"><button class="nav-link active bg-success" id="Payment_Method-tab"
+          data-bs-toggle="tab" data-bs-target="#Payment_Method-tab-pane" type="button" role="tab"
+          aria-controls="Payment_Method-tab-pane" aria-selected="true"><i class="fa fa-credit-card me-1"
+            aria-hidden="true"></i>
+          Payment Method</button></a>
+    </li>
+    <li class="nav-item" role="presentation">
+
+      <a href="" style="text-decoration: none;">
+        <button class="nav-link text-dark" id="Settings-tab" data-bs-toggle="tab" data-bs-target="#Settings-tab-pane"
+          type="button" role="tab" aria-controls="Settings-tab-pane" aria-selected="true"><i
+            class="fa fa-cog me-1" aria-hidden="true"></i>
+          Settings</button>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+
+      <a href="" style="text-decoration: none;">
+        <button class="nav-link text-dark" id="Notification-tab" data-bs-toggle="tab"
+          data-bs-target="#Notification-tab-pane" type="button" role="tab"
+          aria-controls="Notification-tab-pane" aria-selected="true"> <i class="fa fa-bell me-1"
+            aria-hidden="true"></i>
+          Notification</button>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a href="" class="nav-link " aria-current="page" style="color: #000;">
+        <hr>
+      </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a href="" style="text-decoration: none;"><button class="nav-link text-dark" id="Notification-tab"
+          data-bs-toggle="tab" data-bs-target="#Notification-tab-pane" type="button" role="tab"
+          aria-controls="Notification-tab-pane" aria-selected="true"> <i class="fa fa-arrow-right me-1"
+            aria-hidden="true"></i>
+          Log Out</button></a>
+    </li>
+  </ul>
+</div>
+<!-- End vertical navbar -->
+
+
+<!-- Page content holder -->
+<div class="page-content p-5" id="content">
+  <!-- Toggle button -->
+  <button id="sidebarCollapse" type="button" class="btn btn-success rounded-pill px-4 mb-4"><i class="fa fa-bars me-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+
+  <!-- Demo content -->
+  <div class="row">
+    <h4 class="mb-0">Payment Method</h4>
+  </div>
+  <hr> 
+  <form action="" class="row mb-4">
+    <div class="mb-3">
+      <h4 class="mb-0">Credit/Debit Card</h4>
+    </div>
+    <div class="d-lg-inline-flex">
+      <div class="form-check">
+        <input type="radio" name="paymnetRadioOne" id="paymnetRadioOne" class="from-check-input">
+                      <label for="paymnetRadioOne" class="from-check-lable">
+                          <img src="\IMG\p1.svg" alt="">
+                      </label>
+      </div>
+      <div class="form-check me-2">
+        <input type="radio" name="paymnetRadioOne" id="paymnetRadioOne" class="from-check-input">
+        <label for="paymnetRadioOne" class="from-check-lable">
+            <img src="\IMG\p2.svg" alt="">
+        </label>
+    </div>
+    <div class="form-check me-2">
+        <input type="radio" name="paymnetRadioOne" id="paymnetRadioOne" class="from-check-input">
+        <label for="paymnetRadioOne" class="from-check-lable">
+            <img src="\IMG\p3.svg" alt="">
+        </label>
+    </div>
+    </div>
+
+    <div class="col-12 col-md-4 mt-3 mb-3">
+      <label for="namecard" class="form-label">Name on Card</label>
+      <input class="form-control" id="namecard" name="namecard" type="text" placeholder="Name of card" required>
+  </div>
+  <div class="col-12 col-md-4 mt-3 mb-3">
+    <label for="namecard" class="form-label">Month</label>
+    
+    <select name="" id="" class="form-select">
+        <option value>Month</option>
+        <option value="Jun">Jun</option>
+        <option value="Feb">Feb</option>
+        <option value="March">March</option>
+        <option value="Apr">Apr</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="Aug">Aug</option>
+        <option value="Sep">Sep</option>
+        <option value="Oct">Oct</option>
+        <option value="Nov">Nov</option>
+        <option value="Dec">Dec</option>
+    </select>
+</div>
+<div class="col-12 col-md-4 mt-3 mb-3">
+    <label for="Year" class="form-label">Year</label>
+    <select name="" id="Year" class="form-select">
+        <option value>Year</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2025">2025</option>
+    </select>
+</div>
+
+<div class="mb-3 col-md-8 col-12">
+<label for="cc-mark" class="form-label">Card Number</label> 
+<input class="form-control" type="text" id="cc-mark" name="cc-mark" data-inputmask="'mask' : '9999 9999 9999 9999'" placeholder="xxxx xxxx xxxx" required inputmode="text">   
+</div>
+
+<div class="col-12 col-md-4">
+  <label for="cvv" class="form-label">CVV Code</label>
+    <input type="text" class="form-control" id="cvv" name="cvv" data-inputmask="'mask' : '999'" placeholder="xxx" required inputmode="text" maxlength="3" >
+</div>
+
+<div class="mt-3 col-md-6">
+    <button class="btn btn-success">Submit</button>
+</div>
+  </form>
+   
+  </div>
+
+</div>
+<!-- End demo content -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="D:\Only new\Moive\compress\jquery-3.6.1.min.js"></script>
+<script src="sidebar.js"></script>
+</body>
+</html>
+

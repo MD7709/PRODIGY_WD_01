@@ -1,0 +1,113 @@
+body
+{
+    overflow-x: hidden;
+}
+.all-img
+{
+    
+    display: flex;
+}
+
+.small-img
+{
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 20%;
+}
+.small-img img
+{
+    height: 80px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    opacity: 0.7;
+    border-radius: 10%;
+}
+.small-img img:hover
+{
+    opacity: 1;
+}
+.main-img
+{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px)
+{
+    .all-img
+    {
+        flex-direction: column;
+        height: auto ;
+       
+    }
+    .small-img
+    {
+        flex-direction: row;
+        justify-content: space-evenly;
+        order: 1;
+        margin-top: 30px;
+        padding-left: 20px;
+        width: 100%;
+        
+
+    }
+    .product-box
+    {
+        width: 100%;
+    }
+
+    .small-img img
+    {
+        width: 30%;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Big_img
+    {
+        width: 300px;
+    }
+}
+
+@media (max-width: 460px)
+{
+#imgbox
+{
+    width: 100%;
+}
+}
+
+.but
+{
+    transition: 0.5s;
+    border: none;
+    font-family: sans-serif ;
+    background-color: #ffff;
+    margin-top: 50px;
+    height: 50px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    color: #5c6c76;
+}
+.but:hover
+{
+    border-bottom: 2px solid rgb(58, 167, 61);
+    color: rgb(58, 167, 61);
+}
+
+
+.side_color {
+    color: #5c6c76;
+    transition: 0.5ss;
+  }
+
+  .side_color:hover {
+    color: rgb(58, 167, 61);
+  }
+
